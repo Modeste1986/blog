@@ -8,6 +8,7 @@
                 <br>
                 <a href="/blog" class="btn btn-outline-primary">Show Blog</a>
             </div>
+            
         </div>
     </div>
 @endsection

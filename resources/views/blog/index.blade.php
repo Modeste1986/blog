@@ -14,9 +14,13 @@
                     </div>
                 </div>                
                 @forelse($posts as $post)
-                    <ul>
-                        <li><a href="./blog/{{ $post->id }}">{{ ucfirst($post->title) }}</a></li>
-                    </ul>
+                <div class="card">
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="./blog/{{ $post->id }}">{{ ucfirst($post->title) }}</a></li>
+                        </ul>
+                    </div>
+                  </div>
                 @empty
                     <p class="text-warning">No blog Posts available</p>
                 @endforelse
@@ -24,3 +28,4 @@
         </div>
     </div>
 @endsection
+
